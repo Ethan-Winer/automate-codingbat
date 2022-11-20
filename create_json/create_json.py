@@ -40,5 +40,7 @@ for folder_name in os.listdir('./codingbat/java'):
                 output_dict[name]['code'] = code
             except KeyError:
                 continue
-with open('../questionInfo.json', 'w') as file:
+with open('../answers.json', 'w') as file:
     json.dump(output_dict, file)
+
+print('Done')
